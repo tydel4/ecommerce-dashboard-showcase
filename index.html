@@ -182,6 +182,51 @@
             transform: translateY(-2px);
         }
 
+        .streamlit-notice {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(255, 193, 7, 0.2);
+        }
+
+        .notice-content h3 {
+            color: #856404;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .notice-content h3 i {
+            color: #ffc107;
+        }
+
+        .notice-content p {
+            color: #856404;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .notice-content ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        .notice-content li {
+            color: #856404;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .notice-content em {
+            color: #856404;
+            font-style: italic;
+            font-weight: 500;
+        }
+
         .footer {
             text-align: center;
             color: white;
@@ -238,6 +283,20 @@
                 <a href="https://ecommerce-analysis-web.streamlit.app/" class="cta-button" target="_blank">
                     <i class="fas fa-external-link-alt"></i> Launch Dashboard
                 </a>
+            </div>
+
+            <div class="streamlit-notice">
+                <div class="notice-content">
+                    <h3><i class="fas fa-info-circle"></i> Important Notice</h3>
+                    <p><strong>Streamlit Limitations:</strong> This dashboard is hosted on Streamlit Cloud, which has some limitations that may affect your experience:</p>
+                    <ul>
+                        <li><strong>Initial Loading Time:</strong> The app may take 30-60 seconds to start up on first visit</li>
+                        <li><strong>Cold Starts:</strong> If the app hasn't been accessed recently, it may take longer to load</li>
+                        <li><strong>Resource Constraints:</strong> Limited CPU and memory resources may affect performance with large datasets</li>
+                        <li><strong>Concurrent Users:</strong> Performance may vary with multiple simultaneous users</li>
+                    </ul>
+                    <p><em>Please be patient during the initial load. The dashboard will be fully functional once loaded!</em></p>
+                </div>
             </div>
 
             <div class="features">
